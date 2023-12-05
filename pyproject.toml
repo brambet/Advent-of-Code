@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 160
+
+[tool.black]
+line-length = 160
+skip-string-normalization = true
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 160
