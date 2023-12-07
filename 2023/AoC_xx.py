@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass
 from typing import Callable, DefaultDict, Dict, List, NamedTuple, Set, Tuple, Union
 
 from aocd.models import Puzzle
